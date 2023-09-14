@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point of the program
+ * fprintf - Display the stdout and stderr
  * return: 1 (Success)
  */
 int main(void)
