@@ -6,10 +6,11 @@
 int main(void)
 {
 	unsigned short int x = 0;
-
-	do {
-		printf("&d", x);
-	} while (x <= 9);
+	
+	for (x = 48; x <= 57; x++)
+	{
+		putchar(x);
+	}
 	printf("\n");
 return (0);
 }
