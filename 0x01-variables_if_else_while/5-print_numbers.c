@@ -6,7 +6,7 @@
 int main(void)
 {
 	unsigned short int x = 0;
-	
+
 	for (x = 48; x <= 57; x++)
 	{
 		putchar(x);
