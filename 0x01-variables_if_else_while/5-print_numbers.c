@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	unsigend short int x = 0;
+	unsigned short int x = 0;
 
 	do {
 		printf("&d", x);
