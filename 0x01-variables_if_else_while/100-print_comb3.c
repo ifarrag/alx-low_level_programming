@@ -5,7 +5,7 @@
  **/
 int main(void)
 {
-	unsigned short int x, y, z;
+	int x, y, z;
 
 	z = x + y;
 
