@@ -6,7 +6,6 @@
 int main(void)
 {
 	int x, y, z;
-
 	z = x + y;
 
 	for (x = 48; x <= 57; x++)
