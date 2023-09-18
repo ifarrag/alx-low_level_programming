@@ -5,7 +5,7 @@
  **/
 int main(void)
 {
-	unsigned short int x1, x2, x3, x4, x12total, x34total, xta;
+	unsigned short int x1, x2, x3, x4;
 
 	for (x1 = 48; x1 <= 57; x1++)
 	{
@@ -15,21 +15,15 @@ int main(void)
 			{
 			for (x4 = 48; x4 <= 57; x4++)
 				{
-				x12total = x1 + x2;
-				x34total = x3 + x4;
-				xta = x12total + x34total;
-				if (x12total < x34total)
+				if (!(x2 >= x4))
 				{
 					putchar(x1);
 					putchar(x2);
 					putchar(32);
 					putchar(x3);
 					putchar(x4);
-					if (xta != 227)
-					{
-						putchar(',');
-						putchar(32);
-					}
+					putchar(',');
+					putchar(32);
 				}
 				}
 			}
