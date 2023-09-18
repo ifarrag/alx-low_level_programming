@@ -26,7 +26,7 @@ int main(void)
 					putchar(32);
 					putchar(x3);
 					putchar(x4);
-					if (!(x12total == 133 && x34total == 114))
+					if (!((x12total == 133) && (x34total == 114)))
 					{
 						putchar(',');
 						putchar(32);
