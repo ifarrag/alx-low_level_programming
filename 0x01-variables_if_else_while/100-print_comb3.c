@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
-				if (sum != 113)
+				if (z != 113)
 				{
 					putchar(',');
 					putchar(32);
