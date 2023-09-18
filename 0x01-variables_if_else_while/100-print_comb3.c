@@ -6,7 +6,6 @@
 int main(void)
 {
 	int x = 0, y = 0, z;
-	z = x + y;
 
 	for (x = 48; x <= 57; x++)
 	{
@@ -16,7 +15,7 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
-				if (z != 113)
+				if (x != 56 && y != 57)
 				{
 					putchar(',');
 					putchar(32);
