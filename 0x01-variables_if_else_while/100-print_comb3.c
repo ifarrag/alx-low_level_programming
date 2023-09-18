@@ -5,9 +5,9 @@
  **/
 int main(void)
 {
-	unsigned short int x, y;
+	unsigned short int x, y, z;
 
-	int sum = x + y;
+	z = x + y;
 
 	for (x = 48; x <= 57; x++)
 	{
