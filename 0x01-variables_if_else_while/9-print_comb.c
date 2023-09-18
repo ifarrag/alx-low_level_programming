@@ -10,8 +10,11 @@ int main(void)
 	for (x = 48; x <= 57; x++)
 	{
 		putchar(x);
-		putchar(',');
-		putchar(32);
+		if (x != 9)
+		{
+			putchar(',');
+			putchar(32);
+		}
 	}
 	putchar('\n');
 return (0);
