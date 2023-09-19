@@ -16,17 +16,20 @@ for (x1 = 48; x1 <= 57; x1++)
 	{
 	for (x4 = x2 + 1; x4 <= 57; x4++)
 	{
-		if (x2 != x4 && x3 != x1)
-		{
 		putchar(x1);
 		putchar(x2);
 		putchar(32);
 		putchar(x3);
 		putchar(x4);
+
+		if (x1 != 9 && x2 != 9)
+		{
 		putchar(',');
 		putchar(32);
 		}
-	}}}
+	}
+	}
+	}
 }
 	putchar('\n');
 return (0);
