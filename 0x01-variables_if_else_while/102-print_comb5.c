@@ -24,7 +24,7 @@ for (x1 = 48; x1 <= 57; x1++)
 		putchar(x3);
 		putchar(x4);
 
-		if (x1 != 9 && x2 != 9)
+		if (x1 != 9 || x2 != 9)
 		{
 		putchar(',');
 		putchar(32);
