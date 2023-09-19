@@ -15,6 +15,8 @@ int main(void)
 			{
 			for (x4 = 48; x4 <= 57; x4++)
 				{
+				if (x3 >= x1)
+				{
 				if (!(x2 >= x4))
 				{
 					putchar(x1);
@@ -24,6 +26,7 @@ int main(void)
 					putchar(x4);
 					putchar(',');
 					putchar(32);
+				}
 				}
 				}
 			}
