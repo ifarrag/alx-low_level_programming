@@ -7,7 +7,7 @@
 
 void print_alphabet_x10(void)
 {
-	unsigned short int w = 0, f = 97;
+	unsigned short int w = 0;
 
 	while (w < 10)
 	{
