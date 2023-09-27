@@ -1,5 +1,5 @@
 #include "main.h"
-/***
+/**
  * print_alphabet_x10 - Print the alphabet x10
  *
  * Return: Always void (Success)
