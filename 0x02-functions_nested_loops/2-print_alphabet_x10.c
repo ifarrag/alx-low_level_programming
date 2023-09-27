@@ -1,7 +1,8 @@
 #include "main.h"
 /***
- * main - Entry point
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - Print the alphabet x10
+ *
+ * Return: Always void (Success)
  ***/
 
 void print_alphabet_x10(void)
@@ -10,11 +11,8 @@ void print_alphabet_x10(void)
 
 	while (w < 10)
 	{
-		for (; f <= 122; f++)
-		{
-			_putchar(f);
-		}
-		++w;
+		print_alphabet();
+		w++;
 		_putchar('\n');
 	}
 }
