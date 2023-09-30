@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_sign - prints the sign of a number
+ * _abs - prints the absolute number
  * @n: The numper to check
  * Return: 0 (success)
  **/
-int print_sign(int n)
+int _abs(int n)
 {
 	if (n == 0)
 	{
