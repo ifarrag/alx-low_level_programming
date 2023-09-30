@@ -6,10 +6,14 @@
  **/
 int print_last_digit(int in)
 {
+	short int n;
+
 	if (in < 0)
 	{
 		in = in * -1;
 	}
-	return (in % 10);
-	return (in % 10);
+
+	in = in % 10;
+	n = in + in * 10
+	return (n);
 }
