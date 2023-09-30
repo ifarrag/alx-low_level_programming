@@ -6,8 +6,6 @@
  **/
 int _islower(int c)
 {
-	unsigned int c;
-
 	if (c <= 122 && c >= 97)
 	{
 		return (1);
