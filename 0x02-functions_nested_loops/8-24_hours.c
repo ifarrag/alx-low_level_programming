@@ -4,45 +4,34 @@
  **/
 void jack_bauer(void)
 {
-	unsigned short int M1, M2, H1, H2, End;
+	int h1, h2, m1, m2, end;
 
+	for (h1 = 48; h1 <= 50; h1++)
 	{
-		End = 0;
 
-		for (H1 = 48; H1 <= 50; H1++)
-		{
+	for (h2 = 48; h2 <= 57; h2++)
+	{
+	if (h1 == 50 && h2 == 52)
+	{
+	end = 1;
+	}
 
-		for (H2 = 48; H2 <= 57; H2++)
-		{
-		if (End == 0)
-		{
+	for (m1 = 48; m1 <= 53; m1++)
+	{
 
-		for (M1 = 48; M1 <= 53; M1++)
-		{
-
-		for (M2 = 48; M2 <= 57; M2++)
-		{
-
-		_putchar(H1);
-
-		_putchar(H2);
-
+	for (m2 = 48; m2 <= 57; m2++)
+	{
+	if (end == 0)
+	{
+		_putchar(h1);
+		_putchar(h2);
 		_putchar(':');
-
-		_putchar(M1);
-
-		_putchar(M2);
-		
+		_putchar(m1);
+		_putchar(m2);
 		_putchar('\n');
-
-		if (H1 ==2 && H2==3 && M1 == 5 && M2 == 9)
-		{
-		 End = 1;
-		}
-		}
-		}
-		}
-		}
-		}
+	}
+	}
+	}
+	}
 	}
 }
