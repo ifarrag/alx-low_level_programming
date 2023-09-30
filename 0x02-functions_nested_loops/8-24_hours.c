@@ -23,15 +23,15 @@ void jack_bauer(void)
 		for (M2 = 48; M2 <= 57; M2++)
 		{
 
-		_putchar(M1);
+		_putchar(H1);
 
-		_putchar(M2);
+		_putchar(H2);
 
 		_putchar(':');
 
-		_putchar(S1);
+		_putchar(M1);
 
-		_putchar(S2);
+		_putchar(M2);
 		
 		_putchar('\n');
 
@@ -39,13 +39,10 @@ void jack_bauer(void)
 		{
 		 End = 1;
 		}
-
 		}
-
 		}
-
 		}
-
 		}
-
 		}
+	}
+}
