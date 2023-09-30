@@ -9,7 +9,7 @@ void jack_bauer(void)
 	{
 		End = 0;
 
-		for (H1 = 48; H1 <= 51; H1++)
+		for (H1 = 48; H1 <= 50; H1++)
 		{
 
 		for (H2 = 48; H2 <= 57; H2++)
@@ -17,7 +17,7 @@ void jack_bauer(void)
 		if (End == 0)
 		{
 
-		for (M1 = 48; M1 <= 54; M1++)
+		for (M1 = 48; M1 <= 53; M1++)
 		{
 
 		for (M2 = 48; M2 <= 57; M2++)
