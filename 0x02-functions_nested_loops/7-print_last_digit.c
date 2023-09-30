@@ -6,8 +6,6 @@
  **/
 int print_last_digit(int in)
 {
-	short int n;
-
 	if (in < 0)
 	{
 		in = in * -1;
