@@ -11,4 +11,5 @@ int print_last_digit(int in)
 		in = in * -1;
 	}
 	return (in % 10);
+	return (in % 10);
 }
