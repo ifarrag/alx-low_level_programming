@@ -4,25 +4,28 @@
  **/
 void times_table(void)
 {
-	int raw, col, comp;
+	int raw, colm, comp, count1, count2;
 
-	for (raw = 48; raw <= 57; raw++)
+	count1 = 0;
+	count2 = 0;
+	for (raw = 0; raw <= 9; raw++)
 	{
-	for (col = 48; col <= 57; col++)
+	for (colm = 0; colm <= 9; colm++)
 	{
 
-	comp = raw * col;
-	if (col == 57)
+	comp = colm * raw
+	if (colm == 9)
 	{
-	_putchar(comp);
+	_putchar(comp + '0');
 	_putchar('$');
 	_putchar('\n');
 	}
+
 	else
 	{
-	_putchar(comp);
+	_putchar(comp + '0');
 	_putchar(',');
-	_putchar(' ');
+	_putchar(32);
 	}
 
 	}
