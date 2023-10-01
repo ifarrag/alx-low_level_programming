@@ -6,14 +6,13 @@ void times_table(void)
 {
 	int raw, colm, comp;
 
-	count1 = 0;
-	count2 = 0;
 	for (raw = 0; raw <= 9; raw++)
 	{
 	for (colm = 0; colm <= 9; colm++)
 	{
 
-	comp = colm * raw
+	comp = colm * raw;
+
 	if (colm == 9)
 	{
 	_putchar(comp + '0');
