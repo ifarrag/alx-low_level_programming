@@ -4,7 +4,7 @@
  **/
 void times_table(void)
 {
-	int raw, colm, comp, count1, count2;
+	int raw, colm, comp;
 
 	count1 = 0;
 	count2 = 0;
