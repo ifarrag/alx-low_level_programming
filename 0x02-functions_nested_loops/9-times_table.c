@@ -14,7 +14,7 @@ void times_table(void)
 
 			if (coxr > 9)
 			{
-			_putcahr(44), _putchar(32);
+			_putchar(44), _putchar(32);
 			_putchar(coxr / 10 + '0'), _putchar(coxr % 10 + '0');
 			}
 			else
@@ -23,8 +23,10 @@ void times_table(void)
 				{
 				_putchar(44), _putchar(32), _putchar(32), _putchar(coxr + '0');
 				}
-			}
-
+				else
+				{
+				_putchar(coxr + '0');
+				}
 			}
 		}
 		_putchar(10);
