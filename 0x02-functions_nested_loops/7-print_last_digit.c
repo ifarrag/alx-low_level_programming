@@ -13,9 +13,9 @@ int print_last_digit(int in)
 		in = in * -(1);
 	}
 
-	n = (int)in % 10;
+	n = in % 10;
 
-	_putchar('0' + n);
+	_putchar(n + '0');
 
 	return (n);
 }
