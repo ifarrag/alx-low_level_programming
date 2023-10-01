@@ -12,25 +12,24 @@ void times_table(void)
 		{
 		coxr = raw * colm;
 
-		if (coxr > 9)
-		{
-		_putchar(coxr / 10 + '0'), _putchar(coxr % 10 + '0');
-		}
-		else
-		{
-		_putchar(coxr + '0');
-		}
-		if (colm == 9)
-		{
-		_putchar('$');
-		_putchar('\n');
-		}
-		else
-		{
-		_putchar(',');
-		_putchar(32);
-		}
+			if (coxr > 9)
+			{
+			_putchar(coxr / 10 + '0'), _putchar(coxr % 10 + '0');
+			}
+			else
+			{
+			_putchar(coxr + '0');
+			}
 
+			if (colm < 9 && coxr < 9)
+			{
+			_putchar(44), _putchar(32), _putchar(32);
+			}
+			else if (colm < 9 && coxr > 9)
+			{
+			_putchar(44), _putchar(32);
+			}
 		}
+		_putchar(10);
 	}
 }
