@@ -25,7 +25,7 @@ void times_table(void)
 			{
 			_putchar(44), _putchar(32), _putchar(32);
 			}
-			else if (colm < 9 && coxr > 9)
+			else if (colm < 9 && coxr >= 9)
 			{
 			_putchar(44), _putchar(32);
 			}
