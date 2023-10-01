@@ -14,20 +14,17 @@ void times_table(void)
 
 			if (coxr > 9)
 			{
+			_putcahr(44), _putchar(32);
 			_putchar(coxr / 10 + '0'), _putchar(coxr % 10 + '0');
 			}
 			else
 			{
-			_putchar(coxr + '0');
+				if (colm != 0)
+				{
+				_putchar(44), _putchar(32), _putchar(32), _putchar(coxr + '0');
+				}
 			}
 
-			if (colm < 9 && coxr <= 9)
-			{
-			_putchar(44), _putchar(32), _putchar(32);
-			}
-			else if (colm < 9 && coxr > 9)
-			{
-			_putchar(44), _putchar(32);
 			}
 		}
 		_putchar(10);
