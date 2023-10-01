@@ -10,7 +10,7 @@ void times_table(void)
 	{
 		for (colm = 0; colm <= 9; colm++)
 		{
-		coxr = raw * colm;;
+		coxr = raw * colm;
 
 		if (coxr > 9)
 		{
@@ -18,7 +18,7 @@ void times_table(void)
 		}
 		else
 		{
-		_putchar(coxr);
+		_putchar(coxr + '0');
 		}
 		if (colm == 9)
 		{
