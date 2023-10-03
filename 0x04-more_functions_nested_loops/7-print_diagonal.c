@@ -16,21 +16,21 @@ void print_diagonal(int n)
 					count = n -1;
 
 					for (; n > 0; n--)
-					for (; count < n; count++)
 					{
-						if (n > 1)
+						for (; count < n; count++)
 						{
-							_putchar(32);
+							if (n > 1)
+							{
+								_putchar(32);
+							}
 						}
+						_putchar('\\'), _putchar(10);
 					}
-					_putchar('\\'), _putchar(10);
 				}
-
 				else
 				{
 					_putchar('\\'), _putchar(10);
 				}
-			}
 
 	}
 	else
