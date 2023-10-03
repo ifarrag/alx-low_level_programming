@@ -25,9 +25,12 @@ void print_diagonal(int n)
 		}
 		else
 		{
-			_putchar('\');
+			_putchar('\'), _putchar(10);
 		}
 
 	}
-	_putchar(10);
+	else
+	{
+		_putchar(10);
+	}
 }
