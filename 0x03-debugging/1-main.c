@@ -17,7 +17,7 @@ int main(void)
 *	{
 *		putchar(i);
 *	}
-@\\o/\n":**/
+@\\o/\n:*/
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
