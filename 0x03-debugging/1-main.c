@@ -7,7 +7,7 @@
 
 int main(void)
 {/**
-*	int i;
+*	int i; - not used int
 */
 	printf("Infinite loop incoming :(\n");
 /**
@@ -17,7 +17,7 @@ int main(void)
 *	{
 *		putchar(i);
 *	}
-*@\\o/\n: printf*/
+**/
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
