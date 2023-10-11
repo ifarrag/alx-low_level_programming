@@ -31,7 +31,7 @@ int main(void)
 			}
 		}
 	}
-	printf("%lu\n", n);
+	printf("%d\n", n);
 
 	return (0);
 }
