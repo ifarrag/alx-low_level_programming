@@ -9,7 +9,8 @@
 
 int main(void)
 {
-	int natural, prime, n = 204284158381;
+	int natural, prime;
+	long int n = 204284158381;
 
 	for (natural = 3; natural <= sqrt(n); natural++)
 	{
