@@ -30,7 +30,7 @@ int main(void)
 				n = n / prime;
 			}
 		}
-		printf("%d", n);
+		printf("%lu", n);
 	}
 
 	return (0);
