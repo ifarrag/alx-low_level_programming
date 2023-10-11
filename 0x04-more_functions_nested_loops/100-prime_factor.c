@@ -11,6 +11,7 @@ int main(void)
 {
 	int natural, prime;
 	unsigned long int n = 612852475143, np;
+	np = n;
 
 	for (natural = 3; natural <= sqrt(n); natural++)
 	{
@@ -27,7 +28,7 @@ int main(void)
 		{
 			if (n % prime == 0)
 			{
-				np = n / prime;
+				np = np / prime;
 			}
 		}
 	}
