@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
-
 /**
  * main - Entry point
  * Return: 0 Always
  **/
-
 int main(void)
 {
 	int natural, prime;
-	unsigned long int n = 612852475143, np;
-	np = n;
+	unsigned long int n = 612852475143;
 
 	for (natural = 3; natural <= sqrt(n); natural++)
 	{
@@ -24,15 +21,18 @@ int main(void)
 				isprime = false;
 			}
 		}
-		if (isprime)
-		{
-			if (n % prime == 0)
+			while (isprime)
 			{
-				np = np / prime;
+				if (n % prime == 0)
+				{
+					n = n / prime;
+				}
+				else
+				{
+					isprime = false;
+				}
 			}
-		}
 	}
-	printf("%lu\n", np);
-
+	printf("%lu\n", n);
 	return (0);
 }
