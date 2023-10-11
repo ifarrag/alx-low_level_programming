@@ -10,7 +10,7 @@
 int main(void)
 {
 	int natural, prime;
-	long int n = 204284158381;
+	long int n = 612852475143;
 
 	for (natural = 3; natural <= sqrt(n); natural++)
 	{
@@ -30,8 +30,8 @@ int main(void)
 				n = n / prime;
 			}
 		}
-		printf("%lu", n);
 	}
+	printf("%lu\n", n);
 
 	return (0);
 }
