@@ -10,7 +10,7 @@
 int main(void)
 {
 	int natural, prime;
-	unsigned long int n = 612852475143;
+	unsigned long int n = 612852475143, np;
 
 	for (natural = 3; natural <= sqrt(n); natural++)
 	{
@@ -27,11 +27,11 @@ int main(void)
 		{
 			if (n % prime == 0)
 			{
-				n = n / prime;
+				np = n / prime;
 			}
 		}
 	}
-	printf("%lu\n", n);
+	printf("%lu\n", np);
 
 	return (0);
 }
