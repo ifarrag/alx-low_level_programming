@@ -18,5 +18,6 @@ void rev_string(char *s)
 	{
 		*(rev + i) = *s;
 	}
+	_putchar(*rev);
 	s = rev;
 }
