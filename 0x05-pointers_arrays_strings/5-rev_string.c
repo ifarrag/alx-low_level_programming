@@ -7,17 +7,15 @@ void rev_string(char *s)
 {
 	char *rev;
 	char *s_0 = s;
-	int i;
 
 	while (*s)
 	{
 		s++;
 	}
 
-	s--;
-	for (i = 0; s >= s_0; s--)
+	for (s--; s >= s_0; s--)
 	{
-		*(rev + i) = s;
+		*rev = *s;
 	}
-	s = rev;
+	*s = *rev;
 }
