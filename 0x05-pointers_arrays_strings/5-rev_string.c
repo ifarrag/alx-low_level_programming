@@ -5,6 +5,7 @@
  */
 void rev_string(char *s)
 {
+	
 	char** ss;
 
 	while (*s)
@@ -18,5 +19,5 @@ void rev_string(char *s)
 		ss++;
 	}
 
-	s = &ss;
+	*s = **ss;
 }
