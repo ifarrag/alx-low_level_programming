@@ -5,7 +5,7 @@
  */
 void rev_string(char *s)
 {
-	char* ss;
+	char** ss;
 
 	while (*s)
 	{
