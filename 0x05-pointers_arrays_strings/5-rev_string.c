@@ -5,19 +5,19 @@
  */
 void rev_string(char *s)
 {
+	char** ss;
+	int i;
+
 	while (*s)
 	{
-		s++
+		s++;
 	}
 
-	char **_s;
-	int i = 0;
-
-	for (--s; s == s[0]; s--)
+	for (--s; s == &s[0]; s--)
 	{
-		_s[i] = s;
+		_s[i] = &s;
 		i++;
 	}
-	
+
 	s = _s;
 }
