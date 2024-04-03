@@ -6,12 +6,13 @@
  */
 void puts2(char *str)
 {
-	int i, len = strlen(str);
+	int i = 0, len = strlen(str);
 
-	for (i = 0; i < len - 1; i++)
+	while (i < len)
 	{
 		_putchar(*str);
-		_putchar('\n');
 		str = str + 2;
+		i++;
 	}
+	_putchar('\n');
 }
