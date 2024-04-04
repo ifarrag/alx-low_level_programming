@@ -1,6 +1,6 @@
 #include <string.h>
 #include "main.h"
-/*
+/**
  * puts_half - print half of string
  * @str : pointer to string
  */
@@ -24,7 +24,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while (i < (len - 1) / 2)
+		while (i < len - 1 / 2)
 		{
 			i++;
 			str++;
