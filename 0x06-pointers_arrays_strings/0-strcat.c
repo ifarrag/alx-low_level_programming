@@ -3,7 +3,7 @@
  * *_strcat - concatenates two strings
  * @dest: string 1
  * @src: string 2
- * Return: (dest)
+ * Return: (*dest)
  */
 char *_strcat(char *dest, char *src)
 {
@@ -22,5 +22,5 @@ char *_strcat(char *dest, char *src)
 		*len++;
 	}
 	dest[*len] = src[*len];
-	return (dest);
+	return (*dest);
 }
