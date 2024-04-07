@@ -8,7 +8,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int *len;
-	char *res;
+	char **res;
 	int i = 0, n = 0;
 
 	len = &n;
@@ -27,5 +27,5 @@ char *_strcat(char *dest, char *src)
 
 	dest[n] = '\0';
 	res = &dest;
-	return (res);
+	return (*res);
 }
