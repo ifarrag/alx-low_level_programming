@@ -16,7 +16,7 @@ int _atoi(char *s)
 			{
 				num = -((*s - 48) + num * 10);
 			}
-			num = *s - 48 + num * 10
+			num = *s - 48 + num * 10;
 
 		}
 		s++;
