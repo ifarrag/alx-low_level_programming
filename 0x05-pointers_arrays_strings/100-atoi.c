@@ -6,27 +6,22 @@
  */
 int _atoi(char *s)
 {
-	int num = 0, i = 0;
-	int *_num = &num;
+	int num = 0, i = 1, a = 0;
 
 	while (*s)
 	{
+		if (*s == 45)
+			i = -i;
+
 		if (*s >= 48 && *s <= 57)
 		{
-			if (*s-- == 45 && *(s - 2) == 43)
-			{
-				*_num = -((*s - 48) + *_num * (i * 10));
-			}
-
-			else
-			{
-				*_num = (*s - 48) + *_num * (i * 10);
-			}
-			i = 1;
+			a = *s - 0;
+			num = num * i + a;
+			i = 10;
 		}
 
-		s++;
+	s++;
 	}
 
-	return (*_num);
+	return (num);
 }
