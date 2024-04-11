@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int num = 0, i = 1, a = 0;
+	signed int num = 0,i = 1, a = 0;
 
 	while (*s)
 	{
@@ -15,8 +15,8 @@ int _atoi(char *s)
 
 		if (*s >= 48 && *s <= 57)
 		{
-			a = *s - 0;
-			num = num * i + a;
+			a = *s - 48;
+			num = (num + a) * i;
 			i = 10;
 		}
 
