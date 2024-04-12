@@ -7,5 +7,12 @@
 
 void print_number(int n)
 {
-	_putchar(n + '0');
+	int t = n;
+
+	while (t > 10)
+	{
+		_putchar(t % 10 + 48);
+		t = t / 10;
+	}
+	_putchar(t + '0');
 }
