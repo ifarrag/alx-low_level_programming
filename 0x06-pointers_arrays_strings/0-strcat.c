@@ -24,3 +24,4 @@ char *_strcat(char *dest, char *src)
 	}
 	d = dest - i;
 	return (d);
+}
