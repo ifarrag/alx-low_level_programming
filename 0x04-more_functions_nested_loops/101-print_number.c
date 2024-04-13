@@ -9,12 +9,12 @@ void print_number(int n)
 {
 	int t = n, i = 1, res = 0;
 
-	while (t >= 10)
+	while (t > 10)
 	{
 		t = t / 10;
 		i = i * 10;
 	}
-	while (t <= -10)
+	while (t < -10)
 	{
 		t = t / 10;
 		i = i * 10;
