@@ -9,7 +9,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int s =0;
+	int s = 0;
 
 	while (s < n && s <= strlen(dest))
 	{
