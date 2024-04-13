@@ -13,6 +13,8 @@ void reverse_array(int *a, int n)
 		r = a[i];
 		a[i] = a[m];
 		a[m] = r;
+		if (m == i)
+			break;
 		m--;
 		i++;
 	}
