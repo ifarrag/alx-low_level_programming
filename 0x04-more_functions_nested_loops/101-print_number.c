@@ -23,7 +23,7 @@ void print_number(int n)
 	if (res < 0)
 	{
 		_putchar(45);
-		res = (res * -1)
+		res = (res * -1);
 	}
 	while (i >= 1)
 	{
