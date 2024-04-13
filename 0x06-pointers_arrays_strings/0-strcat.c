@@ -21,4 +21,4 @@ char *_strcat(char *dest, char *src)
 		src++;
 		i++;
 	}
-	return (dest - i);
+	return (&dest - i);
