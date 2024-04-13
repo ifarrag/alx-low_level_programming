@@ -9,13 +9,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int s = 0, len = strlen(dest);
+	int s = 0, len_d = strlen(dest), len_s = strlen(src);
 
-	while (s < n && s <= len)
+	while (s < n && s <= len_d)
 	{
 		*dest = *src;
 		dest++;
-		src++;
+
+		if (s < len_s)
+			src++;
 		s++;
 	}
 	dest = dest - s;
