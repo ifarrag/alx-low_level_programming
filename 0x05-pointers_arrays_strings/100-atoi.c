@@ -19,7 +19,7 @@ int _atoi(char *s)
 			a = (*s - 48) + (a * ten);
 			ten = 10;
 		}
-		while (*s == ';')
+		if (*s == ';')
 		{
 			break;
 		}
