@@ -17,12 +17,9 @@ int _atoi(char *s)
 		if (*s >= 48 && *s <= 57)
 		{
 			a = *s - 48;
-			num = (num + a) * i;
-			i = 10;
+			return (a*i);
 		}
 
 	s++;
 	}
-
-	return (num);
 }
