@@ -27,5 +27,8 @@ char *cap_string(char *str)
 	}
 	*str = '\0';
 
+	if (*s >= 'a' && *s <= 'z')
+		*s = *s - 32;
+
 	return (s);
 }
