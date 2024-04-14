@@ -13,6 +13,7 @@ char *leet(char *str)
 
 	while (*str)
 	{
+		i = 0;
 		while (letter[i] != '\0')
 		{
 			if (*str == letter[i])
