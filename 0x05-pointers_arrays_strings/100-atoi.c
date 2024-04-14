@@ -18,8 +18,10 @@ int _atoi(char *s)
 		{
 			a = *s - 48;
 			return (a*i);
+			i = -i;
 		}
 
 	s++;
 	}
+	return (0);
 }
