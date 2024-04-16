@@ -8,7 +8,7 @@ void print_number(int n)
 	int num = n, i = 0, ins;
 	char str;
 
-	while (n)
+	while (n != 0)
 	{
 		n = n / 10;
 		i++;
