@@ -15,7 +15,7 @@ void print_number(int n)
 	}
 
 	if (num < 0)
-		_putchat('-');
+		_putchar('-');
 
 	while (i > 0)
 	{
