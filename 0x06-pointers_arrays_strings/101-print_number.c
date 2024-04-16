@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	int num = n, i = 0, ins;
+	int num = n, i = 0;
 	char str;
 
 	while (num != 0)
@@ -26,9 +26,8 @@ void print_number(int n)
 	while (i > 0)
 	{
 		--i;
-		ins = (n / (10 ^ i)) % 10;
-		str = ins + 48;
-		_putchar(str);
+		str = (n / (10 ^ i)) % 10;
+		_putchar(str + '0');
 	}
 
 }
