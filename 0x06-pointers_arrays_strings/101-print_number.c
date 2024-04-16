@@ -22,9 +22,8 @@ void print_number(int n)
 	if (i <= 1)
 		_putchar(n + '0');
 
-	while (i > 1)
+	for (i--; i >= 0; i--)
 	{
-		--i;
 		str = (n / (10 ^ i)) % 10;
 		_putchar(str + '0');
 	}
