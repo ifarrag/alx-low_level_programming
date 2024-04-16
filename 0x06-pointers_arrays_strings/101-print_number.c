@@ -8,25 +8,25 @@ void print_number(int n)
 	int num = n, i = 0, ins;
 	char str;
 
-	while (n != 0)
+	while (num != 0)
 	{
-		n = n / 10;
+		num = num / 10;
 		i++;
 	}
 
-	if (num < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		num = num * -1;
+		n = n * -1;
 	}
-	if (num == 0)
-		_putchar(num + '0');
+	if (n == 0)
+		_putchar(n + '0');
 
 
 	while (i > 0)
 	{
 		--i;
-		ins = (num / (10 ^ i)) % 10;
+		ins = (n / (10 ^ i)) % 10;
 		str = ins + 48;
 		_putchar(str);
 	}
