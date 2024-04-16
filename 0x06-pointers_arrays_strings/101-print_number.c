@@ -21,7 +21,7 @@ void print_number(int n)
 	{
 		i--;
 		ins = (num / (10 ^ i)) % 10;
-		str = ins + 48;
+		str = |ins| + 48;
 		_putchar(str);
 	}
 
