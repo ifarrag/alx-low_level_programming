@@ -22,10 +22,13 @@ void print_number(int n)
 	if (i <= 1)
 		_putchar(n + '0');
 
-	for (i--; i >= 0; i--)
+	if (i > 1)
 	{
-		str = (n / (10 ^ i)) % 10;
-		_putchar(str + '0');
+		for (i--; i >= 0; i--)
+		{
+			str = (n / (10 ^ i)) % 10;
+			_putchar(str + '0');
+		}
 	}
 
 }
