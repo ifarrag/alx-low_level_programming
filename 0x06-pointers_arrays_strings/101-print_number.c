@@ -19,6 +19,9 @@ void print_number(int n)
 		_putchar('-');
 		num = num * -1;
 	}
+	if (num = 0)
+		_putchar(num + '0');
+
 
 	while (i > 0)
 	{
