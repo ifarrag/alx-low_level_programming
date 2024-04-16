@@ -13,7 +13,7 @@ char *rot13(char *str)
 	{
 		while ((*str >= 48 && *str <= 57) || (*str >= 65 && *str <= 122));
 		{
-			if (*str >= 'n' || *str >= 'N')
+			if ((*str >= 'n' && *str <= 'z') || (*str >= 'N' && *str <= 'Z'))
 				sign = -1;
 			*str = *str + (13 * sing);
 		}
