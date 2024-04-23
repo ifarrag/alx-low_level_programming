@@ -21,5 +21,5 @@ void _print_rev_recursion(char *s)
 	a = *s;
 	*s = *(s - str);
 	*(s - str)  = a;
-
+	return;
 }
