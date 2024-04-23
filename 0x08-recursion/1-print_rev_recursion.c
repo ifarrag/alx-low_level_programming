@@ -20,6 +20,6 @@ void _print_rev_recursion(char *s)
 	s--;
 	str = str - 1;
 	a = *s;
-	*s = *(s + str);
-	*(s + str)  = a;
+	*s = *(s - str);
+	*(s - str)  = a;
 }
