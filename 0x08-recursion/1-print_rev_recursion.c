@@ -10,7 +10,7 @@ void _print_rev_recursion(char *s)
 
 	int str = strlen(&s[0]), i = 0;
 
-	if (*s != '\0' && i = 0)
+	if (*s != '\0' && i == 0)
 	{
 		s++;
 		_print_rev_recursion(s);
@@ -21,6 +21,5 @@ void _print_rev_recursion(char *s)
 	a = *s;
 	*s = *(s - str);
 	*(s - str)  = a;
-
 
 }
