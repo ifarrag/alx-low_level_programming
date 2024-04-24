@@ -19,12 +19,5 @@ void _print_rev_recursion(char *s)
 	s[len - 1]  = a;
 	s++;
 
-	if (len > (len0 / 2) && len0 % 2 == 0)
-	{
-		_print_rev_recursion(s);
-	}
-	if (len > (len0 + 1) / 2 && len0 % 2 != 0)
-	{
-		_print_rev_recursion(s);
-	}
+	_print_rev_recursion(s);
 }
