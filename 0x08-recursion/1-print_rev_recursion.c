@@ -7,19 +7,16 @@
 void _print_rev_recursion(char *s)
 {
 	char a;
+	int len0 = strlen(&s[0]), len = strlen(s);
+	int s_z = len0 - len;
 
-	int str = strlen(&s[0]), i = 0;
-
-	if (*s != '\0' && i == 0)
-	{
-		s++;
-		_print_rev_recursion(s);
-	}
-	i++;
-	s--;
+	if (len <= len0 / 2)
+		return;
 
 	a = *s;
-	*s = *(s - str);
-	*(s - str)  = a;
-	return;
+	*s = *(&s[0] + (len - 1));
+	*(&s[0] + (len - 1))  = a;
+	s++;
+
+	_print_rev_recursion(s);
 }
