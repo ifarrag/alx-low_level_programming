@@ -9,9 +9,9 @@ void _print_rev_recursion(char *s)
 	char a;
 	int len0 = strlen(&s[0]), len = strlen(s);
 
-	if (len == (len0 + 1) / 2)
+	if ((len0 % 2 != 0) && (len == (len0 + 1) / 2))
 		return;
-	if (len == len0 / 2)
+	if ((len == len0 / 2) && (len0 % 2 == 0))
 		return;
 
 	a = *s;
