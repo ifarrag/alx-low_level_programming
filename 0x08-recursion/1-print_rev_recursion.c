@@ -8,6 +8,11 @@ void _print_rev_recursion(char *s)
 {
 	char a, *str = &s[0];
 	int len0 = strlen(str), len = strlen(s);
+	
+	if (len == len0 / 2 && len0 % 2 == 0)
+		return;
+	if (len == (len0 + 1) / 2 && len0 % 2 != 0)
+		return;
 
 	a = *s;
 	*s = *(str[len - 1]);
