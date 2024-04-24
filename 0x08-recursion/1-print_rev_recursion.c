@@ -23,7 +23,7 @@ void _print_rev_recursion(char *s)
 	}
 	if (len <= len0 && len0 % 2 != 0)
 	{
-		if(len == (len0 + 1) / 2)
+		if (len == (len0 + 1) / 2)
 			return;
 		_print_rev_recursion(s);
 	}
