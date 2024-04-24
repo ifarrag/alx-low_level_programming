@@ -15,8 +15,8 @@ void _print_rev_recursion(char *s)
 		return;
 
 	a = *s;
-	*s = *(str[len - 1]);
-	*(str[len - 1])  = a;
+	*s = *(str + len - 1);
+	*(str + len - 1)  = a;
 	s++;
 
 	if (len > (len0 / 2) && len0 % 2 == 0)
