@@ -7,7 +7,7 @@
 void _print_rev_recursion(char *s)
 {
 	char a;
-	int len0 = strlen(str), len = strlen(s);
+	int len0 = strlen(s0), len = strlen(s);
 
 	if (len == len0 / 2 && len0 % 2 == 0)
 		return;
