@@ -1,6 +1,6 @@
 #include "main.h"
-int main(int argc, char *argv[])
+int main(int, char *argv[])
 {
-	_putchar(argv[0]);
+	_putchar(*argv[0]);
 	return (0);
 }
