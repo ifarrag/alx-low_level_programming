@@ -3,8 +3,8 @@
  * main - Print argv[0]
  * return: (0)
  */
-int main(int argc , char *argv[])
+int main(int argc _attribute_((unused)), char *argv[])
 {
-	_putchar(*argv[0]);
+	_putchar(**argv);
 	return (0);
 }
