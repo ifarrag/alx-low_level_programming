@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 			mul /= 10;
 		}
 		_putchar(mul + 48);
-		_putchar('\n')
+		_putchar('\n');
 		return(0);
 
 	}
