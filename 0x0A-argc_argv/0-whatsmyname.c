@@ -5,6 +5,10 @@
  */
 int main(int argc __attribute__((unused)), char **argv)
 {
-	_putchar(**argv);
+	for (; **argv != 32; argv++)
+	{
+		_putchar(**argv);
+	}
+
 	return (0);
 }
