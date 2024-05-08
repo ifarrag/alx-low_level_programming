@@ -5,6 +5,6 @@
  */
 int main(int argc __attribute__((unused)), char **argv)
 {
-	_putchar(argv[0][0]);
+	_putchar(**argv);
 	return (0);
 }
