@@ -10,17 +10,14 @@ int main(int argc, char **argv)
 {
 	int i, s = 0;
 
-	while (argc > 1)
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (s = 0; argv[i][s] != '\0'; s++)
 		{
-			for (s = 0; argv[i][s] != '\0'; s++)
-			{
-				_putchar(argv[i][s]);
-			}
-			_putchar('\n');
+			_putchar(argv[i][s]);
 		}
-	argc--;
+
+		_putchar('\n');
 	}
 	return (0);
 }
