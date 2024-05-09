@@ -12,14 +12,14 @@ int main(int argc, char **argv)
 
 	if (argc == 3)
 	{
-		while (argv [1][i] != '\0')
+		while (argv[1][i] != '\0')
 		{
 			num1 *= 10;
 			num1 = num1 + (argv[1][i] - 48);
 			i++;
 		}
 		i = 0;
-		while (argv [2][i] != '\0')
+		while (argv[2][i] != '\0')
 		{
 			num2 *= 10;
 			num2 = num2 + (argv[2][i] - 48);
@@ -29,19 +29,13 @@ int main(int argc, char **argv)
 		if (mul < 0)
 		{
 			sign = -1;
-			mul *= -1;
+			mul = -mul;
 		}
 		if (sign == -1)
 			_putchar('-');
-
-		while (mul > 9)
-		{
-			_putchar((mul % 10) + 48);
-			mul /= 10;
-		}
-		_putchar(mul + 48);
+		_put_int(mul);
 		_putchar('\n');
-		return(0);
+		return (0);
 
 	}
 	else
@@ -52,7 +46,7 @@ int main(int argc, char **argv)
 		_putchar('o');
 		_putchar('r');
 		_putchar('\n');
-		return(1);
+		return (1);
 	}
 
 }
