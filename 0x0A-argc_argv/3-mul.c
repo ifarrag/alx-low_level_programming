@@ -8,7 +8,7 @@
  */
 int main(int argc, char **argv)
 {
-	int mul = 0, num1 = 0, num2 = 0, i = 0, sign = 1;
+	int mul = 0, num1 = 0, num2 = 0, i = 0, sign = 1, mul_1, x = 1;
 
 	if (argc == 3)
 	{
@@ -33,10 +33,20 @@ int main(int argc, char **argv)
 		}
 		if (sign == -1)
 			_putchar('-');
-		_put_int(mul);
+		mul_1 = mul;
+		while (mul_1 > 9)
+		{
+			mul_1 = mul_1 / 10;
+			x = x * 10;
+		}
+		while (x >= 1)
+		{
+			mul_1 = mul / x;
+			_putchar((mul_1 % 10) + 48);
+			x /= 10;
+		}
 		_putchar('\n');
 		return (0);
-
 	}
 	else
 	{
