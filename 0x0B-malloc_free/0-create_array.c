@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 /**
  * create_array - Creates an array of chars
  * @size: The size of the array
@@ -8,6 +8,7 @@
  */
 char *create_array(unsigned int size, char c)
 {
+	int i;
 	char *str;
 
 	str = malloc(sizeof(char) * size);
