@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * _strdup - copy the string given 
+ * _strdup - copy the string given
  * @str: String to duplicate
- * REturn: pointer to duplicated str
+ * Return: pointer to duplicated str
  */
 char *_strdup(char *str)
 {
 	unsigned int i;
 	char *str_d;
 
-	if (str)
+	if (str == '\0')
 	{
 		str_d = malloc(strlen(str) + 1);
 		if (*str_d == '\0')
