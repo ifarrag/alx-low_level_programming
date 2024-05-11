@@ -4,19 +4,20 @@
  * _strdup - copy the string given
  * @str: String to duplicate
  * Return: pointer to duplicated str
+ *
  */
 char *_strdup(char *str)
 {
 	unsigned int i;
-	char *str_d = '\0';
+	char *str_d;
 
-	str_d = malloc(strlen(str) + 1);
-	if (*str_d == '\0' || *str == 0)
+	str_d = malloc(sizeof(*str));
+	if (!str_d || *str == 0)
 		return ('\0');
+
 	for (i = 0; i <= strlen(str); i++)
 	{
-		str_d[i] = *str;
-		str++;
+		str_d[i] = str[i];
 	}
 	return (str_d);
 }
