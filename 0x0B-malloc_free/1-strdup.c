@@ -8,7 +8,7 @@
 char *_strdup(char *str)
 {
 	unsigned int i;
-	char *str_d;
+	char *str_d = '\0';
 
 	if (*str != '\0')
 	{
@@ -22,5 +22,5 @@ char *_strdup(char *str)
 		return (str_d);
 	}
 	else
-		return ('\0');
+		return (str_d);
 }
