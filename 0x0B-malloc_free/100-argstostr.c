@@ -8,7 +8,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char **str;
+	char *str;
 	int a, b, avx = 0;
 
 	if (!ac)
@@ -37,5 +37,5 @@ char *argstostr(int ac, char **av)
 		str[a][++b] = '\n';
 
 	}
-	return (*str);
+	return (str);
 }
