@@ -9,7 +9,7 @@
 char *argstostr(int ac, char **av)
 {
 	char **str;
-	unsigned int a, b;
+	int a, b;
 
 	str = malloc(sizeof(char) * 2 * ac + sizeof(char));
 	if (!str)
@@ -24,5 +24,5 @@ char *argstostr(int ac, char **av)
 		str[a][++b] = '\n';
 
 	}
-	return (str);
+	return (*str);
 }
