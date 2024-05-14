@@ -30,13 +30,14 @@ char *argstostr(int ac, char **av)
 	if (str == NULL)
 		return ('\0');
 	avx = 0;
-	for (a = 0; a <= ac; a++)
+	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
 		{
 			str[avx] = av[a][b];
 			avx++;
 		}
+		avx++;
 		str[avx] = '\n';
 	}
 	str[avx++]  = '\0';
