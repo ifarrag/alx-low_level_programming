@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 		return ('\0');
 	}
 
-	str = malloc(sizeof(**av) + sizeof(char) * ac);
+	str = (int*) malloc(sizeof(char) * sizeof(**av) + ac);
 	if (!str)
 		return ('\0');
 	for (a = 0; a < ac; a++)
