@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * argstostr - concatenates all the arguments
  * @ac: The number of command line arg
@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	str = (char *) malloc(sizeof(**av) * sizeof(char));
-	if (*str == '\0')
+	if (str == NULL)
 		return ('\0');
 	for (a = 0; a < ac; a++)
 	{
