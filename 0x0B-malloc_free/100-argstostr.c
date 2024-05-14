@@ -11,7 +11,7 @@ char *argstostr(int ac, char **av)
 {
 	char *str;
 	int a, b;
-	long unsigned int avx = 0;
+	unsigned long int avx = 0;
 
 	if (!ac)
 	{
@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	if (str == NULL)
 		return ('\0');
 	avx = 0;
-	for (a = 0; a < ac; a++)
+	for (a = 0; a <= ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
 		{
