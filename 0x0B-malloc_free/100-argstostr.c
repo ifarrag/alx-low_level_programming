@@ -5,30 +5,41 @@
  * @ac: The number of command line arg
  * @av: string of command line arg
  * Return: Pointer to string of args
- *
+ * *
  */
 char *argstostr(int ac, char **av)
 {
 	char *str;
 	int a, b;
+	long unsigned int avx = 0;
 
 	if (!ac)
 	{
-		return ('\0');
+		return ((char *) avx);
 	}
 
-	str = (char *) malloc(sizeof(**av) * sizeof(char));
-	if (str == NULL)
-		return ('\0');
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			*str = av[a][b];
-			str++;
+			avx++;
 		}
-		*str = '\n';
-
 	}
+
+	str = malloc(sizeof(char) * (avx + ac + 1));
+	if (str == NULL)
+		return ('\0');
+	avx = 0;
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0; av[a][b] != '\0'; b++)
+		{
+			str[avx] = av[a][b];
+			avx++;
+		}
+		str[avx] = '\n';
+	}
+	str[avx++]  = '\0';
+
 	return (str);
 }
