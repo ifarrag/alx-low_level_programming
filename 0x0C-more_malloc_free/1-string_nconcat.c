@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int (t1, t2) = 0, i, ii;
+	unsigned int t1 = 0, t2 = 0, i, ii;
 	char *ptr;
 
 	while (!*s1)
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; *s1 != NULL; i++)
 		ptr[i] = s1[i];
 
-	for (ii = 0;ii <= n; ii++)
+	for (ii = 0;ii < n; ii++)
 		ptr[i] = s2[ii];
 	i++;
 	ptr[i] = '\0';
