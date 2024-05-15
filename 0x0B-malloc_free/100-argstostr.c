@@ -38,9 +38,9 @@ char *argstostr(int ac, char **av)
 			avx++;
 		}
 		str[avx] = '\n';
+		avx++;
+		str[avx]  = '\0';
 	}
-	avx++;
-	str[avx]  = '\0';
 
 	return (str);
 }
