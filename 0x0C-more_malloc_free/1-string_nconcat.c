@@ -14,11 +14,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 
 	while (!*s1)
+	{
 		t1++;
-
+	}
 	while (!s2)
+	{
 		t2++;
-
+	}
 	if (n >= t2)
 		n = t2;
 
