@@ -13,14 +13,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int t1 = 0, t2 = 0, i, x;
 	char *ptr;
 
-	if (*s1 != NULL)
+	if (s1 != NULL)
 	{
 		while (s1[t1] != '\0')
 			t1++;
 	}
 	else
 		*s1 = '\0';
-	if (*s2 != NULL)
+	if (s2 != NULL)
 	{
 		while (s2[t2] != '\0')
 			t2++;
