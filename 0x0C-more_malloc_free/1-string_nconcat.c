@@ -13,16 +13,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int t1 = 0, t2 = 0, i, x;
 	char *ptr;
 
-	while (*s1)
-	{
-		s1++;
+	while (s1[t1] != '\0')
 		t1++;
-	}
-	while (*s2)
-	{
-		s2++;
+
+	while (s2[t2] != '\0')
 		t2++;
-	}
+
 	if (n >= t2)
 		n = t2;
 
