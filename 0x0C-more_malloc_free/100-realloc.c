@@ -27,7 +27,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return ('\0');
 	}
 
-	for (i = 0; (char *)ptr != '\0' && i < old_size; i++)
+	for (i = 0; ptr != 0 && i < old_size; i++)
 	{
 		str[i] = ptr[i];
 	}
