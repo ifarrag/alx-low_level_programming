@@ -1,7 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
+ * array_range - Allocate (max - min + 1)
+ * @max: max number in arr
+ * @min: min number in arr
+ * Return: pointer to int (New alloc memo)
  */
 int *array_range(int min, int max)
 {
