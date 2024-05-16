@@ -5,13 +5,14 @@
  * @ptr: pointer to allocate memo
  * @old_size: old size of ptr
  * @new_size: New size allocation
+ * Return: pointer to new str
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *str;
 	unsigned int i;
 
-	if (new_size == 0)
+	if (new_size == 0 && ptr != 0)
 	{
 		free(ptr);
 		return ('\0');
