@@ -22,10 +22,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	while (*name)
 	{
+		name++;
 		n++;
 	}
 	while (*owner)
 	{
+		owner++;
 		o++;
 	}
 	nm = malloc(sizeof(char) * n);
