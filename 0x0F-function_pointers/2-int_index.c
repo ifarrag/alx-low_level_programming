@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * int_index - Search for an int
  * @array: Search from here
@@ -9,7 +10,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i, r;
 
-	if (size <= 0)
+	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
 
 	for (i = 0; i < size; i++)
