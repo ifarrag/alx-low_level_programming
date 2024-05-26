@@ -4,11 +4,11 @@
  * print_all - prints anything
  * @format: string of types
  */
-void print_char()
+void print_char(va_list ptr)
 {
-	printf("%c"va_arg(ptr, char));
+	printf("%c", va_arg(ptr, char));
 }
-void print_string()
+void print_string(va_list ptr)
 {
 	char *str = va_arg(ptr, char*);
 	if (str == NULL)
@@ -18,11 +18,11 @@ void print_string()
 	}
 	printf("%s", str);
 }
-void print_int()
+void print_int(va_list ptr)
 {
 	printf("%d", va_arg(ptr, int));
 }
-void print_float()
+void print_float(va_list ptr)
 {
 	printf("%f", va_arg(ptr, float));
 }
