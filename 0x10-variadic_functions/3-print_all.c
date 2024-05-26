@@ -29,7 +29,7 @@ void print_float(va_list ptr)
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0;
-	char arr[] = {c, s, i, f};
+	char arr[] = {'c', 's', 'i', 'f'};
 	va_list ptr;
 	void (*fun[])() = {print_char, print_string, print_int, print_float};
 
