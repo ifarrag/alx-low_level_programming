@@ -6,7 +6,7 @@
  */
 void print_char(va_list ptr)
 {
-	char cc = va_arg(ptr, char);
+	char cc = (char)va_arg(ptr, int);
 	printf("%c", cc);
 }
 void print_string(va_list ptr)
@@ -26,18 +26,18 @@ void print_int(va_list ptr)
 }
 void print_float(va_list ptr)
 {
-	float ff = va_arg(ptr, float);
+	float ff = (float)va_arg(ptr, double);
 	printf("%f", ff);
 }
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0;
+	unsigned int i = 0, n = 0;
 	char arr[] = {'c', 's', 'i', 'f'};
 	va_list ptr;
 	void (*fun[])() = {print_char, print_string, print_int, print_float};
 
 	va_start(ptr, format);
-	while (format != NULL)
+	while (format[n] != NULL)
 	{
 		while (i < 4)
 		{
@@ -47,6 +47,6 @@ void print_all(const char * const format, ...)
 			}
 			i++;
 		}
-		format++;
+		n++;
 	}
 }
