@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
 /**
  * print_all - prints anything
  * @format: string of types
@@ -38,11 +39,12 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char arr[] = {'c', 's', 'i', 'f'};
 	va_list ptr;
-	char *ptf = format;
-	void (*fun[])(va_list) = {, print_string, print_int, print_float};
+	char *ptf;
+	void (*fun[])(va_list) = {print_char, print_string, print_int, print_float};
 
+	strcpy(format, ptf);
 	va_start(ptr, format);
-	while (ptf != '\0')
+	while (*ptf != '\0')
 	{
 		while (i < 4)
 		{
@@ -54,6 +56,6 @@ void print_all(const char * const format, ...)
 		}
 		ptf++;
 	}
-	printf('\n');
+	printf("\n");
 	va_end(ptr);
 }
