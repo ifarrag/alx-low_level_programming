@@ -6,7 +6,7 @@
  */
 void print_char(va_list ptr)
 {
-	char cc = va_arg(ptr, char)
+	char cc = va_arg(ptr, char);
 	printf("%c", cc);
 }
 void print_string(va_list ptr)
@@ -21,7 +21,7 @@ void print_string(va_list ptr)
 }
 void print_int(va_list ptr)
 {
-	int integer = va_arg(ptr, int)
+	int integer = va_arg(ptr, int);
 	printf("%d", integer);
 }
 void print_float(va_list ptr)
