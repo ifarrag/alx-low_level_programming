@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
+#include <string.h>
 /**
  * print_all - prints anything
  * @format: string of types
@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 	char *ptf;
 	void (*fun[])(va_list) = {print_char, print_string, print_int, print_float};
 
-	strcpy(format, ptf);
+	strcpy(ptf, format);
 	va_start(ptr, format);
 	while (*ptf != '\0')
 	{
