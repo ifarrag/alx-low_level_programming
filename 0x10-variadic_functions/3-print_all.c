@@ -36,26 +36,23 @@ void print_float(va_list ptr)
 }
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0;
+	unsigned int i = 0, n = 0;
 	char arr[] = {'c', 's', 'i', 'f'};
 	va_list ptr;
-	unsigned int formlen = strlen(format) + 1;
-	char ptf[formlen];
 	void (*fun[])(va_list) = {print_char, print_string, print_int, print_float};
 
-	strcpy(ptf, format);
 	va_start(ptr, format);
-	while (*ptf != '\0')
+	while (format[n] != '\0')
 	{
 		while (i < 4)
 		{
-			if (*ptf == arr[i])
+			if (format[n] == arr[i])
 			{
 				(*fun[i])(ptr);
 			}
 			i++;
 		}
-		ptf++;
+		n++;
 	}
 	printf("\n");
 	va_end(ptr);
