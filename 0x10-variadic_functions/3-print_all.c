@@ -39,7 +39,8 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char arr[] = {'c', 's', 'i', 'f'};
 	va_list ptr;
-	char *ptf;
+	unsigned int formlen = strlen(format) + 1;
+	char ptf[formlen];
 	void (*fun[])(va_list) = {print_char, print_string, print_int, print_float};
 
 	strcpy(ptf, format);
