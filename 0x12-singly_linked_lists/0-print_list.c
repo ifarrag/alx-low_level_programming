@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <lists.h>
+#include "lists.h"
 /**
  * print_list - print data of nodes
  * @h: pointer to list_t
