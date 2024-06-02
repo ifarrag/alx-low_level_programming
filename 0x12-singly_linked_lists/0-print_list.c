@@ -9,20 +9,20 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int size = 0;
-	list_t ptr = *h;
+	list_t *ptr = *h;
 
-	while(ptr.next != NULL)
+	while(ptr->next != NULL)
 	{
 		size++;
-		if(ptr.str != NULL)
+		if(ptr->str != NULL)
 		{
-			printf("[%u] %s", ptr.len, ptr.str);
+			printf("[%u] %s", ptr->len, ptr->str);
 		}
 		else
 		{
 			printf("[0] (nill)");
 		}
-		ptr = ptr.next;
+		ptr = ptr->next;
 	}
 	return (size);
 }
