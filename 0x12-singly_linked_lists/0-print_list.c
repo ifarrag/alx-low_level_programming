@@ -9,9 +9,8 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int size = 0;
-	const list_t *ptr = malloc(sizeof(list_t));
+	list_t ptr = h;
 
-	ptr->next = h;
 	while(ptr->next != NULL)
 	{
 		size++;
@@ -25,6 +24,5 @@ size_t print_list(const list_t *h)
 		}
 		ptr = ptr->next;
 	}
-	free(ptr);
 	return (size);
 }
