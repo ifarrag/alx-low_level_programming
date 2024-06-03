@@ -18,5 +18,5 @@ void free_list(list_t *head)
 	}
 	*ptr = (*ptr)->next;
 	free_list(*ptr);
-	free(ptr);
+	free(*ptr);
 }
