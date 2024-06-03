@@ -36,8 +36,8 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	while (*ptr != NULL)
 	{
-		*ptr = ptr->next;
+		ptr = &ptr->next;
 	}
-	ptr = &new;
+	*ptr = new;
 	return (*ptr);
 }
