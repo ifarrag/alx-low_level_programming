@@ -14,9 +14,9 @@ void free_list(list_t *head)
 	}
 	if (ptr->next == NULL)
 	{
-		free(ptr);
 		return;
 	}
 	ptr = ptr->next;
 	free_list(ptr);
+	free(ptr);
 }
