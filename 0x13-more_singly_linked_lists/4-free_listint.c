@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "lists.h"
 /**
  * free_listint - Free all the list
  * @head: The start point
