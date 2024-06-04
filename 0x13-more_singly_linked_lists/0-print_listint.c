@@ -3,6 +3,7 @@
 /**
  * print_listint - Print list data
  * @h: pointer to the start
+ * Return: number of nodes (sum)
  */
 size_t print_listint(const listint_t *h)
 {
