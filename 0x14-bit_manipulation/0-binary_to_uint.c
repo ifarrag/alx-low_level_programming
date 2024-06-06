@@ -20,9 +20,9 @@ unsigned int binary_to_uint(const char *b)
 
 	for (--ech; ech >= 0; ech--)
 	{
-		if (b[ech] == 0 || b[ech] == 1)
+		if (b[ech] == 48 || b[ech] == 49)
 		{
-			num = b[ech] * position;
+			num = (b[ech] - 48) * position;
 			position *= 2;
 		}
 		else
