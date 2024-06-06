@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[ech] == 48 || b[ech] == 49)
 		{
-			num = (b[ech] - 48) * position;
+			num += (b[ech] - 48) * position;
 			position *= 2;
 		}
 		else
