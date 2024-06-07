@@ -10,10 +10,10 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	if (index > 512)
 		return (-1);
-	if (*n >> index & 1 == 1)
+	if ((*n >> index & 1) == 1)
 	{
 		num = num << index ^ *n;
-		*n = num
+		*n = num;
 	}
 	return (1);
 }
