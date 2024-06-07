@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 
 	while (n > max)
 	{
-		if (max * 2 > n)
+		if (max * 2 > n || max == size_t)
 			break;
 
 		max *= 2;
