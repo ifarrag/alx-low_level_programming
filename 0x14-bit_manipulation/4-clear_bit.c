@@ -6,12 +6,14 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int num = 0;
+	unsigned long int num = 1;
 
 	if (index > 512)
 		return (-1);
-	num = *n >> index & 0;
-	num = num << index & *n;
-	*n = num;
+	if (*n >> index & 1 == 1)
+	{
+		num = num << index ^ *n;
+		*n = num
+	}
 	return (1);
 }
