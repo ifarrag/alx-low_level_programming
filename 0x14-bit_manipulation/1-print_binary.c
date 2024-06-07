@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int max = 1, b = 1, num = 0;
+	unsigned long int max = 1, b = 1, num = 0;
 
 	while (n > max)
 	{
@@ -24,7 +24,9 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 		}
 		else
-			_putchar(0);
+		{
+			_putchar('0');
+		}
 		num = 1;
 		while (num < max)
 		{
