@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	while (n >= max)
 	{
-		if (max  == ULONG_MAX || max * 2 > n)
+		if (max * 2 == ULONG_MAX || max * 2 > n)
 			break;
 
 		max *= 2;
