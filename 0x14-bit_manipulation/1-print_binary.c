@@ -22,6 +22,7 @@ void print_binary(unsigned long int n)
 		if (n >= num)
 		{
 			_putchar('1');
+			n = n - max;
 		}
 		else
 		{
@@ -34,8 +35,6 @@ void print_binary(unsigned long int n)
 				break;
 			num = num * 2;
 		}
-		if (n > num)
-			n = n - max;
 		max = num;
 	}
 }
