@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <limits.h>
 /**
  * print_binary - convert int to binary and print the result
  * @n: Integer num
@@ -12,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	while (n >= max)
 	{
-		if (max * 2 == ULONG_MAX || max * 2 > n)
+		if (max * 2 <= 0 || max * 2 > n)
 			break;
 
 		max *= 2;
