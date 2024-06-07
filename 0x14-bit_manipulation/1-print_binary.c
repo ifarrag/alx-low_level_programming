@@ -6,7 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int max = 1, b = 1, num = 0;
+	unsigned long long int max = 1, b = 1, num = 0;
 
 	while (n > max)
 	{
