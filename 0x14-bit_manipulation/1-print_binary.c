@@ -7,9 +7,10 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int max = 1, b = 1, num = 0;
+	unsigned long int max = 1, num = 0;
+	int b = 1;
 
-	while (n > max)
+	while (n >= max)
 	{
 		if (max  == ULONG_MAX || max * 2 > n)
 			break;
