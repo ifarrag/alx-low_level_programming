@@ -11,7 +11,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (index > 512)
 		return (-1);
-	num = *n >> index | 1 << index | *n;
+	num = *n >> index | 1;
+	num = num << index | *n;
 	*n = num;
 	return (1);
 }
