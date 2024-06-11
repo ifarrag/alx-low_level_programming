@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 #include <stdio.h>
 /**
  * read_textfile - read a text file and print to stdout
@@ -9,7 +10,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fptr;
-	int c = 0;
+	unsigned char c = 0;
 	unsigned long int i = 0;
 
 	if (filename == NULL)
@@ -21,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while ((c = fgetc(fptr)) != EOF && i < letters)
 	{
 		i++;
-		_putchar(c);
+		write(1, &c, 1);
 	}
 	fclose(fptr);
 	return (i);
