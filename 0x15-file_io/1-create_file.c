@@ -12,7 +12,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	fptr = fopen(filename, "r+");
+	fptr = fopen(filename, "w+");
 	if (fptr == NULL)
 		return (-1);
 	while (text_content != NULL)
