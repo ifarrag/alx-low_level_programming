@@ -15,7 +15,7 @@ int create_file(const char *filename, char *text_content)
 	fptr = fopen(filename, "w+");
 	if (fptr == NULL)
 		return (-1);
-	while (text_content != NULL)
+	if (text_content != NULL)
 	{
 		fprintf(fptr, "%s", text_content);
 	}
