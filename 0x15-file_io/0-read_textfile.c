@@ -10,7 +10,8 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fptr;
-	unsigned char *c;
+	unsigned char c;
+	int x = 0;
 	unsigned long int i = 0;
 
 	if (filename == NULL)
@@ -19,8 +20,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fptr = fopen(filename, "r");
 	if (fptr == NULL)
 		return (0);
-	while ((*c = fgetc(fptr)) != EOF && i < letters)
+	while ((x = fgetc(fptr)) != EOF && i < letters)
 	{
+		c = (char)x;
 		i++;
 		write(1, &c, 1);
 	}
