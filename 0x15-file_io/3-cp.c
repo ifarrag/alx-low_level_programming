@@ -33,11 +33,6 @@ int main(int argc, char **argv)
 	}
 	while (rd != 0)
 	{
-		if (fd2 == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
-		}
 		rd = read(fd1, buf, 1024);
 		if (rd == -1)
 		{
