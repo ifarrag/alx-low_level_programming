@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include <stdarg.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
 /**
- *
+ * main - cp file_from file_to
+ * @argc: Number of args
+ * @argv: command line args
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
@@ -15,7 +20,7 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	fd1 = open(argv[1], O_RDONLY);
-	if (fd == -1)
+	if (fd1 == -1)
 	{
 		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
 		exit(98);
