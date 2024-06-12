@@ -31,6 +31,11 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
+	if (close(fd2) != 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
+		exit(100);
+	}
 	while (rd != 0)
 	{
 		fd2 = open(argv[2], O_WRONLY | O_APPEND);
@@ -48,8 +53,8 @@ int main(int argc, char **argv)
 		wr = write(fd2, buf, 1024);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
-			exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
 		}
 	}
 	if (close(fd1) != 0)
