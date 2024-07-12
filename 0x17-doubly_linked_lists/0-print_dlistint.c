@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 /**
  * print_dlistint - print n
  * @h: the head of list
