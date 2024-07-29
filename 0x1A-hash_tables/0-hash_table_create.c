@@ -20,7 +20,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ptr->array = malloc(sizeof(ptr) * size);
 	for (i = 0; i < size; i++)
 	{
-		ptr->array[i] = NULL
+		ptr->array[i] = NULL;
 	}
 
 	return (ptr);
