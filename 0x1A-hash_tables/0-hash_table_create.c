@@ -7,6 +7,7 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
+	int i = 0;
 	hash_table_t *ptr = NULL;
 
 	if (size == 0)
