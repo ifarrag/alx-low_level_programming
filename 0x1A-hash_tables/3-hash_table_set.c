@@ -5,6 +5,7 @@
  * hash_table_set - add new node in the array
  * if collisions add the node at the beginning
  *
+ * @ht: The hash table
  * @key: The key of the list
  * @value: the value /////
  * Return: 1 on Succ or 0
@@ -16,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key == NULL || value == NULL)
 		return (0);
-	if (strlen(key) == 0)
+	if (strlen(key) == 0 || !ht)
 		return (0);
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
